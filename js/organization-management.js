@@ -34,7 +34,8 @@ if (
 // Form Elements
 // ===============================
 
-const organizationId = document.getElementById("organizationId");
+const coordinatorId =
+localStorage.getItem("userId");
 
 const name = document.getElementById("name");
 
@@ -197,7 +198,7 @@ async function createOrganization() {
 
         foundedYear: parseInt(foundedYear.value),
 
-        coordinatorId: parseInt(coordinatorId.value)
+        coordinatorId: parseInt(coordinatorId)
 
     };
 
@@ -283,16 +284,6 @@ async function editOrganization(id) {
 
         foundedYear.value = org.foundedYear;
 
-        if (org.coordinator) {
-
-            coordinatorId.value = org.coordinatorId;
-
-        } else {
-
-            coordinatorId.value = "";
-
-        }
-
         window.scrollTo({
 
             top: 0,
@@ -341,8 +332,7 @@ async function updateOrganization() {
 
         foundedYear: parseInt(foundedYear.value),
 
-        coordinatorId: parseInt(coordinatorId.value)
-
+       coordinatorId: parseInt(coordinatorId)
     };
 
     try {
@@ -462,6 +452,6 @@ function clearForm() {
 
     foundedYear.value = "";
 
-    coordinatorId.value = "";
+
 
 }
