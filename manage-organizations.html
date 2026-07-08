@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VolunteerView | Manage Organizations</title>
+
+    <link rel="stylesheet"
+          href="css/manage-organizations.css">
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        VolunteerView
+
+    </div>
+
+    <ul>
+
+        <li onclick="location.href='admin-dashboard.html'">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            Dashboard
+
+        </li>
+
+        <li class="active">
+
+            <i class="fa-solid fa-building"></i>
+
+            Organizations
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-hand-holding-heart"></i>
+
+            Opportunities
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-users"></i>
+
+            Volunteers
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            Impact Reports
+
+        </li>
+
+        <li id="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <h1>Manage Organizations</h1>
+
+    <div class="toolbar">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Organization">
+
+        <button id="addBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add Organization
+
+        </button>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>ID</th>
+
+            <th>Name</th>
+
+            <th>Email</th>
+
+            <th>Phone</th>
+
+            <th>Status</th>
+
+            <th>Actions</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="organizationTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="js/manage-organizations.js"></script>
+
+</body>
+
+</html>

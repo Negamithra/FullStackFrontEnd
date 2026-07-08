@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>User Management</title>
+
+    <link rel="stylesheet"
+          href="css/user-list.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            VolunteerView
+
+        </div>
+
+        <ul>
+
+            <li onclick="location.href='admin-dashboard.html'">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Dashboard
+
+            </li>
+
+            <li class="active">
+
+                <i class="fa-solid fa-users"></i>
+
+                Users
+
+            </li>
+
+            <li onclick="location.href='organization-list.html'">
+
+                <i class="fa-solid fa-building"></i>
+
+                Organizations
+
+            </li>
+
+            <li onclick="location.href='opportunity-list.html'">
+
+                <i class="fa-solid fa-hand-holding-heart"></i>
+
+                Opportunities
+
+            </li>
+
+            <li onclick="location.href='enrollment-list.html'">
+
+                <i class="fa-solid fa-user-check"></i>
+
+                Enrollments
+
+            </li>
+
+            <li onclick="location.href='impact-report-list.html'">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                Impact Reports
+
+            </li>
+
+            <li id="logout">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <div class="header">
+
+            <h1>
+
+                User Management
+
+            </h1>
+
+            <p>
+
+                View and manage registered users
+
+            </p>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="toolbar">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search by Name or Email">
+
+        </div>
+
+        <!-- Table -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Name</th>
+
+                        <th>Email</th>
+
+                        <th>Phone</th>
+
+                        <th>Role</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="userTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="js/user-list.js"></script>
+
+</body>
+
+</html>

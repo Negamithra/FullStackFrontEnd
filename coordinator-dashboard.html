@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Coordinator Dashboard</title>
+
+    <link rel="stylesheet"
+          href="css/coordinator-dashboard.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            VolunteerView
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Dashboard
+
+            </li>
+
+            <li onclick="location.href='organization-list.html'">
+
+                <i class="fa-solid fa-building"></i>
+
+                Organizations
+
+            </li>
+
+            <li onclick="location.href='opportunity-list.html'">
+
+                <i class="fa-solid fa-hand-holding-heart"></i>
+
+                Opportunities
+
+            </li>
+
+            <li onclick="location.href='enrollment-list.html'">
+
+                <i class="fa-solid fa-users"></i>
+
+                Volunteer Enrollments
+
+            </li>
+
+            <li onclick="location.href='impact-report-list.html'">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                Impact Reports
+
+            </li>
+
+            <li id="logout">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <div class="header">
+
+            <h1>
+
+                Coordinator Dashboard
+
+            </h1>
+
+            <p>
+
+                Welcome Organization Coordinator
+
+            </p>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-building"></i>
+
+                <h2 id="organizationCount">0</h2>
+
+                <p>Organizations</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-hand-holding-heart"></i>
+
+                <h2 id="opportunityCount">0</h2>
+
+                <p>Opportunities</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2 id="enrollmentCount">0</h2>
+
+                <p>Enrollments</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <h2 id="reportCount">0</h2>
+
+                <p>Impact Reports</p>
+
+            </div>
+
+        </div>
+
+        <!-- Quick Actions -->
+
+        <div class="actions">
+
+            <button onclick="location.href='organization-form.html'">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Create Organization
+
+            </button>
+
+            <button onclick="location.href='opportunity-form.html'">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Create Opportunity
+
+            </button>
+
+            <button onclick="location.href='organization-list.html'">
+
+                <i class="fa-solid fa-list"></i>
+
+                Manage Organizations
+
+            </button>
+
+            <button onclick="location.href='opportunity-list.html'">
+
+                <i class="fa-solid fa-list"></i>
+
+                Manage Opportunities
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/coordinator-dashboard.js"></script>
+
+</body>
+
+</html>

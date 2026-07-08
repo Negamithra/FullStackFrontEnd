@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VolunteerView | Organization Form</title>
+
+    <link rel="stylesheet"
+          href="css/organization-form.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1 id="title">Add Organization</h1>
+
+        <form id="organizationForm">
+
+            <div class="inputBox">
+
+                <label>Organization Name</label>
+
+                <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter organization name"
+                        required>
+
+            </div>
+
+            <div class="inputBox">
+
+                <label>Mission</label>
+
+                <textarea
+                        id="mission"
+                        rows="4"
+                        placeholder="Enter organization mission"
+                        required></textarea>
+
+            </div>
+
+            <div class="inputBox">
+
+                <label>Address</label>
+
+                <textarea
+                        id="address"
+                        rows="3"
+                        placeholder="Enter organization address"
+                        required></textarea>
+
+            </div>
+
+            <div class="inputBox">
+
+                <label>Contact Email</label>
+
+                <input
+                        type="email"
+                        id="contactEmail"
+                        placeholder="Enter contact email"
+                        required>
+
+            </div>
+
+            <div class="inputBox">
+
+                <label>Contact Phone</label>
+
+                <input
+                        type="text"
+                        id="contactPhone"
+                        maxlength="10"
+                        placeholder="Enter 10-digit phone number"
+                        required>
+
+            </div>
+
+            <div class="inputBox">
+
+                <label>Founded Year</label>
+
+                <input
+                        type="number"
+                        id="foundedYear"
+                        placeholder="Enter founded year"
+                        min="1900"
+                        max="2100"
+                        required>
+
+            </div>
+
+            <div class="inputBox">
+
+                <label>Coordinator ID</label>
+
+                <input
+                        type="number"
+                        id="coordinatorId"
+                        placeholder="Enter Coordinator User ID"
+                        required>
+
+            </div>
+
+            <div class="buttons">
+
+                <button type="submit">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Save Organization
+
+                </button>
+
+                <button
+                        type="button"
+                        class="cancel"
+                        onclick="window.location.href='manage-organizations.html'">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Cancel
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/organization-form.js"></script>
+
+</body>
+
+</html>

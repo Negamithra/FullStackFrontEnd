@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Volunteer Dashboard</title>
+
+    <link rel="stylesheet"
+          href="css/volunteer-dashboard.css">
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        VolunteerView
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+
+            <i class="fa-solid fa-house"></i>
+
+            Dashboard
+
+        </li>
+
+        <li onclick="location.href='browse-opportunities.html'">
+
+            <i class="fa-solid fa-hand-holding-heart"></i>
+
+            Browse Opportunities
+
+        </li>
+
+        <li onclick="location.href='my-enrollments.html'">
+
+            <i class="fa-solid fa-users"></i>
+
+            My Enrollments
+
+        </li>
+
+        <li onclick="location.href='impact-report.html'">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            Submit Report
+
+        </li>
+
+        <li onclick="location.href='profile.html'">
+
+            <i class="fa-solid fa-user"></i>
+
+            My Profile
+
+        </li>
+
+        <li id="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <h1>
+
+        Welcome Volunteer 👋
+
+    </h1>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-hand-holding-heart"></i>
+
+            <h2 id="totalOpportunities">0</h2>
+
+            <p>Available Opportunities</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h2 id="myEnrollments">0</h2>
+
+            <p>My Enrollments</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h2 id="hours">0</h2>
+
+            <p>Volunteer Hours</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-award"></i>
+
+            <h2 id="reports">0</h2>
+
+            <p>Impact Reports</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/volunteer-dashboard.js"></script>
+
+</body>
+
+</html>

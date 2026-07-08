@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile</title>
+
+    <link rel="stylesheet"
+          href="css/profile.css">
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            VolunteerView
+
+        </div>
+
+        <ul>
+
+            <li onclick="location.href='volunteer-dashboard.html'">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </li>
+
+            <li onclick="location.href='browse-opportunities.html'">
+
+                <i class="fa-solid fa-hand-holding-heart"></i>
+
+                Browse Opportunities
+
+            </li>
+
+            <li onclick="location.href='my-enrollments.html'">
+
+                <i class="fa-solid fa-users"></i>
+
+                My Enrollments
+
+            </li>
+
+            <li onclick="location.href='impact-report.html'">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                Submit Report
+
+            </li>
+
+            <li class="active">
+
+                <i class="fa-solid fa-user"></i>
+
+                My Profile
+
+            </li>
+
+            <li id="logout">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main">
+
+        <div class="profile-card">
+
+            <div class="profile-image">
+
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+            <h2 id="profileName">
+
+                Volunteer
+
+            </h2>
+
+            <p id="profileRole">
+
+                VOLUNTEER
+
+            </p>
+
+            <div class="details">
+
+                <div class="detail">
+
+                    <span>Volunteer ID</span>
+
+                    <strong id="volunteerId"></strong>
+
+                </div>
+
+                <div class="detail">
+
+                    <span>Role</span>
+
+                    <strong id="role"></strong>
+
+                </div>
+
+                <div class="detail">
+
+                    <span>Status</span>
+
+                    <strong>Active</strong>
+
+                </div>
+
+            </div>
+
+            <button id="logoutBtn">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    display:flex;
+    background:#F1F5F9;
+    min-height:100vh;
+
+}
+
+/* ================= Sidebar ================= */
+
+.sidebar{
+
+    width:260px;
+    background:#1E3A8A;
+    color:white;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    padding:25px 0;
+
+}
+
+.logo{
+
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:40px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    padding:18px 30px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.sidebar ul li:hover{
+
+    background:#2563EB;
+    padding-left:40px;
+
+}
+
+.sidebar ul li.active{
+
+    background:#2563EB;
+    border-left:5px solid white;
+
+}
+
+.sidebar ul li i{
+
+    margin-right:12px;
+
+}
+
+/* ================= Main ================= */
+
+.main{
+
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:35px;
+
+}
+
+.header{
+
+    margin-bottom:30px;
+
+}
+
+.header h1{
+
+    color:#1E3A8A;
+    margin-bottom:8px;
+
+}
+
+.header p{
+
+    color:#64748B;
+
+}
+
+/* ================= Toolbar ================= */
+
+.toolbar{
+
+    margin-bottom:25px;
+
+}
+
+.toolbar input{
+
+    width:350px;
+    padding:12px 15px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+    box-shadow:0 5px 10px rgba(0,0,0,.08);
+    font-size:15px;
+
+}
+
+/* ================= Table ================= */
+
+.table-container{
+
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#1E3A8A;
+    color:white;
+
+}
+
+thead th{
+
+    padding:16px;
+    text-align:left;
+
+}
+
+tbody td{
+
+    padding:15px;
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+tbody tr:hover{
+
+    background:#F8FAFC;
+
+}
+
+/* ================= Buttons ================= */
+
+.edit-btn{
+
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-right:8px;
+    transition:.3s;
+
+}
+
+.edit-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+.delete-btn{
+
+    background:#DC2626;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+    background:#B91C1C;
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:900px){
+
+.sidebar{
+
+    width:80px;
+
+}
+
+.logo{
+
+    font-size:18px;
+
+}
+
+.sidebar ul li{
+
+    font-size:0;
+    text-align:center;
+
+}
+
+.sidebar ul li i{
+
+    margin:0;
+    font-size:20px;
+
+}
+
+.main{
+
+    margin-left:80px;
+    width:calc(100% - 80px);
+
+}
+
+.toolbar input{
+
+    width:100%;
+
+}
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    min-width:1000px;
+
+}
+
+}

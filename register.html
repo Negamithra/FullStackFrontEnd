@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VolunteerView | Register</title>
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+
+    <div class="left">
+
+        <img src="images/register.png" alt="Register">
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="right">
+
+        <form id="registerForm">
+
+            <h1>Create Account</h1>
+
+            <p>Join VolunteerView Today</p>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                        type="text"
+                        id="name"
+                        placeholder="Full Name"
+                        required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <input
+                        type="text"
+                        id="phonenumber"
+                        placeholder="Phone Number"
+                        maxlength="10"
+                        required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user-tag"></i>
+
+                <select id="role" required>
+
+                    <option value="">Select Role</option>
+
+                    <option value="VOLUNTEER">Volunteer</option>
+
+                    <option value="ORGANIZATION_COORDINATOR">
+                        Organization Coordinator
+                    </option>
+
+                    <option value="PLATFORM_ADMIN">
+                        Platform Admin
+                    </option>
+
+                </select>
+
+            </div>
+
+            <button type="submit">
+
+                Register
+
+            </button>
+
+            <p class="login">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </p>
+
+            <p id="message"></p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/register.js"></script>
+
+</body>
+
+</html>

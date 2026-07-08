@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VolunteerView | Manage Opportunities</title>
+
+    <link rel="stylesheet"
+          href="css/manage-opportunities.css">
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        VolunteerView
+
+    </div>
+
+    <ul>
+
+        <li onclick="location.href='admin-dashboard.html'">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            Dashboard
+
+        </li>
+
+        <li onclick="location.href='manage-organizations.html'">
+
+            <i class="fa-solid fa-building"></i>
+
+            Organizations
+
+        </li>
+
+        <li class="active">
+
+            <i class="fa-solid fa-hand-holding-heart"></i>
+
+            Opportunities
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-users"></i>
+
+            Volunteers
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            Impact Reports
+
+        </li>
+
+        <li id="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <h1>Manage Opportunities</h1>
+
+    <div class="toolbar">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Opportunity">
+
+        <button id="addBtn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add Opportunity
+
+        </button>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>ID</th>
+
+            <th>Title</th>
+
+            <th>Location</th>
+
+            <th>Start Date</th>
+
+            <th>Status</th>
+
+            <th>Actions</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="opportunityTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="js/manage-opportunities.js"></script>
+
+</body>
+
+</html>

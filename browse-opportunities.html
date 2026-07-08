@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Opportunities</title>
+
+    <link rel="stylesheet"
+          href="css/browse-opportunities.css">
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        VolunteerView
+
+    </div>
+
+    <ul>
+
+        <li onclick="location.href='volunteer-dashboard.html'">
+
+            <i class="fa-solid fa-house"></i>
+
+            Dashboard
+
+        </li>
+
+        <li class="active">
+
+            <i class="fa-solid fa-hand-holding-heart"></i>
+
+            Browse Opportunities
+
+        </li>
+
+        <li onclick="location.href='my-enrollments.html'">
+
+            <i class="fa-solid fa-users"></i>
+
+            My Enrollments
+
+        </li>
+
+        <li onclick="location.href='impact-report.html'">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            Submit Report
+
+        </li>
+
+        <li onclick="location.href='profile.html'">
+
+            <i class="fa-solid fa-user"></i>
+
+            My Profile
+
+        </li>
+
+        <li id="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <div class="topBar">
+
+        <h1>
+
+            Browse Volunteer Opportunities
+
+        </h1>
+
+        <input
+                type="text"
+                id="search"
+                placeholder="Search by title or location...">
+
+    </div>
+
+    <div id="opportunityContainer"
+         class="cards">
+
+        <!-- Cards will be loaded here -->
+
+    </div>
+
+</div>
+
+<script src="js/browse-opportunities.js"></script>
+
+</body>
+
+</html>

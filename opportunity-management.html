@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Opportunity Management</title>
+
+    <link rel="stylesheet"
+          href="css/opportunity-management.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>VolunteerView</h1>
+
+        <div>
+
+            <button id="dashboardBtn">
+                Dashboard
+            </button>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <h2>Opportunity Management</h2>
+
+        <div class="form-container">
+
+            <input type="hidden"
+                   id="opportunityId">
+
+            <div class="form-group">
+
+                <label>Title</label>
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Opportunity Title">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Description</label>
+
+                <textarea
+                    id="description"
+                    rows="4"
+                    placeholder="Opportunity Description"></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Location</label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Location">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Required Skills</label>
+
+                <input
+                    type="text"
+                    id="requiredSkills"
+                    placeholder="Required Skills">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Start Date</label>
+
+                <input
+                    type="datetime-local"
+                    id="startDate">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>End Date</label>
+
+                <input
+                    type="datetime-local"
+                    id="endDate">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Maximum Volunteers</label>
+
+                <input
+                    type="number"
+                    id="maxVolunteers">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Status</label>
+
+                <select id="status">
+
+                    <option value="OPEN">
+                        OPEN
+                    </option>
+
+                    <option value="CLOSED">
+                        CLOSED
+                    </option>
+
+                    <option value="COMPLETED">
+                        COMPLETED
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Organization ID</label>
+
+                <input
+                    type="number"
+                    id="organizationId"
+                    placeholder="Organization ID">
+
+            </div>
+
+            <div class="button-group">
+
+                <button id="createBtn">
+
+                    Create Opportunity
+
+                </button>
+
+                <button id="updateBtn">
+
+                    Update Opportunity
+
+                </button>
+
+                <button id="clearBtn">
+
+                    Clear
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="table-header">
+
+            <h3>All Opportunities</h3>
+
+            <button id="loadBtn">
+
+                Refresh List
+
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Title</th>
+
+                    <th>Location</th>
+
+                    <th>Status</th>
+
+                    <th>Max Volunteers</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="opportunityTableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="js/config.js"></script>
+
+    <script src="js/opportunity-management.js"></script>
+
+</body>
+
+</html>
